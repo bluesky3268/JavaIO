@@ -16,7 +16,7 @@ public class ByteReadEx {
      * - 보조 스트림 자체적으로 입출력을 수행할 수 없다
      * -> 입출력 소스로부터 직접 생성된 입출력 스트림에 연결해서 사용해야 한다.
      * ex) InputStream is = new FileInputStream();
-     *    InputStreamReader reader = new InputStreamReader();
+     *    InputStreamReader reader = new InputStreamReader(is);
      *
      * 보조 스트림의 종류
      *  - InputStreamReader : 바이트 스트림을 문자 스트림을 변환
